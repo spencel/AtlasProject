@@ -1,0 +1,60 @@
+Modules:
+
+public module myModule{}
+
+public var myPublicVariable = "myModule.myPublicVariable";
+
+private var myPrivateVariable = "myModule.myPrivateVariable";
+
+public function myPublicFunction() {
+
+	console.log( "myModule.myPublicFunction" );
+
+	console.log( myPrivateVariable );
+
+	myPrivateFunction();
+
+}
+
+private function myPrivateFunction() {
+
+	console.log( "myModule.myPrivateFunction" );
+
+}
+
+
+Classes:
+
+private|public class MyPrivateClass{}
+
+static var myStaticProperty = "myModule.MyPrivateClass.myStaticProperty";
+
+constructor function MyPrivateClass() {
+
+	instance var myInstanceProperty = "myModule.MyPrivateClass.myInstanceProperty";
+
+}
+
+static function myStaticMethod = function() {
+
+	console.log( "myModule.MyPrivateClass.myStaticMethod" );
+
+}
+
+instance function myInstanceMethod = function() {
+
+	console.log( "myModule.MyPrivateClass.myInstanceMethod" );
+
+}
+
+static function getMyPrivateClass = function() {
+
+	return MyPrivateClass;
+
+}
+
+static function newMyPrivateClass = function() {
+
+	return new MyPrivateClass();
+
+}

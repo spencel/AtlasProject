@@ -1,0 +1,24 @@
+AtlasProject
+	* Mathematics
+			uf add
+			uf subtract
+			uf multiply
+			uf divide
+			uf modulo
+		* Geometry
+			* Algebraic
+			* Convex
+			* Differential
+			* Discrete
+			* Euclidean
+				* PythagoreanTheorem
+			* Shape
+				* Polygon
+					* Triangle
+						+ Right
+								sp nextId
+								sp byId
+								sp quantity
+								sm calcHypotenuse
+								sm calcSideLength
+			* Topological
